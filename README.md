@@ -13,5 +13,5 @@ sudo npm rebuild
 npm start
 
 ```
-you can access the platform at http://<YOUR-RPI-IP-ADDRESS>:3000 
+you can access the platform at http://YOUR-RPI-IP-ADDRESS:3000 
 
