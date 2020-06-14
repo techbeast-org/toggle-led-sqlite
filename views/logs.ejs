@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Device Logs of your IoT device</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="/table.css">
+</head>
+  <body>
+
+    <p><a href="/">Go Back</a></p>
+   
+      <h2 align="center">Display device logs using Node.js & SQLite</h2>
+     <table align="center" border="1">
+        <tr>
+          <th>SNo</th>
+          <th>timestamp</th>
+          <th>name</th>
+          <th>status</th>
+        </tr>
+
+        <% if(DeviceData.length!=0){ var i=1; DeviceData.forEach(function(data){
+        %>
+        <tr>
+          <td><%=i; %></td>
+          <td><%=data.timestamp %></td>
+          <td><%=data.name %></td>
+          <td><%=data.status %></td>
+        </tr>
+        <% i++; }) %> <% } else{ %>
+        <tr>
+          <td colspan="7">No Data Found</td>
+        </tr>
+        <% } %>
+      </table>
+    
+  </body>
+</html>
