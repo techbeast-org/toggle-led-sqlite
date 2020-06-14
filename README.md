@@ -13,5 +13,5 @@ sudo npm rebuild
 npm start
 
 ```
-you can access the platform at http://localhost:8080 or use your Pi's IP address if you are accessing it from your laptop
+you can access the platform at http://<YOUR-RPI-IP-ADDRESS>:3000 
 
